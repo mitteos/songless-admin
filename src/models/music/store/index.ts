@@ -87,7 +87,7 @@ export const useMusicStore = () => {
     error: musicQuery.error,
 
     // Функции для работы с жанрами
-    createMusic: createMusicMutation.mutate,
+    createMusic: createMusicMutation.mutateAsync,
     createManyMusic: createManyMusicMutation.mutateAsync,
     updateMusic: updateMusicMutation.mutate,
     deleteMusic: deleteMusicMutation.mutate,

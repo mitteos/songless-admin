@@ -164,8 +164,8 @@ export const MusicManyForm: React.FC<MusicManyFormProps> = ({
             ))}
         </div>
 
-        <Button type="submit" className="w-full">
-          {isManyUploading ? <Loader /> : "Добавить"}
+        <Button type="submit" className="w-full" disabled={isManyUploading}>
+          {isManyUploading ? <Loader color="white" size={25} /> : "Добавить"}
         </Button>
       </form>
     </Modal>

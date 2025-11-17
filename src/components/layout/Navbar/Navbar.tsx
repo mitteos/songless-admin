@@ -1,6 +1,7 @@
 import { useState } from "react";
 import {
   IconCalendarEventFilled,
+  IconHelpHexagon,
   IconHome2,
   IconJoker,
   IconLogout,
@@ -48,6 +49,7 @@ const mockdata = [
   { icon: IconPlayCard1, label: "Плейлисты", path: "/stack" },
   { icon: IconJoker, label: "Жанры", path: "/genre" },
   { icon: IconCalendarEventFilled, label: "Год", path: "/years" },
+  { icon: IconHelpHexagon, label: "Сервис", path: "/service" },
 ];
 
 export function Navbar() {

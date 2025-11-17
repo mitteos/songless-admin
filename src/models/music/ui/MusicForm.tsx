@@ -25,6 +25,7 @@ export const MusicForm: React.FC<MusicFormProps> = ({ opened, close }) => {
     handleSubmit,
     formState: { errors },
     control,
+    reset,
   } = useForm<Inputs>();
   const { genres } = useGenreStore();
   const { years } = useYearStore();
@@ -47,6 +48,8 @@ export const MusicForm: React.FC<MusicFormProps> = ({ opened, close }) => {
 
     await createMusic(formData);
     setFiles([]);
+    reset();
+    close();
   };
 
   return (
